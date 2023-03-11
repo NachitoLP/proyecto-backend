@@ -59,7 +59,8 @@ class ProductManager {
 
             products.splice(position,1);
             products.splice(position,0,productFound);
-
+            console.log("Producto actualizado");
+            
             await fs.promises.writeFile(route,JSON.stringify(products));
             return products;
         }
