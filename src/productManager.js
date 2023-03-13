@@ -1,5 +1,5 @@
 const fs = require("fs");
-const route = "./archivos/productos.json"
+const route = "../archivos/productos.json"
 
 class ProductManager {
     constructor(){
