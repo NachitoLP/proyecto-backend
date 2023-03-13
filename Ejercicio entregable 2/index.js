@@ -1,4 +1,4 @@
-const { ProductManager } = require("./productManager");
+const { ProductManager } = require("../src/productManager");
 
 const product = new ProductManager()
 
@@ -6,12 +6,12 @@ product.getProducts()
 .then(resp => console.log(resp));
 
 product.addProduct({
-    name: "Ananá",
-    description: "Una rica ananá",
-    price: 2000,
+    name: "Agua Mineral",
+    description: "Una rica Agua Mineral",
+    price: 250,
     href: "Sin imagen",
-    code: "123456",
-    stock: 10
+    code: "ag021",
+    stock: 20
 })
 
 product.deleteProductsById(2);
